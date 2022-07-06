@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>html-basic</title>
+</head>
+
+<body>
+  <h1>Lorem</h1>
+  <h2>Lorem,ipsum</h2>
+  <h3>Lorem,ipsum,dolor</h3>
+  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam porro adipisci unde optio sit maxime nihil
+    mollitia consequuntur, enim dolorem explicabo accusantium? Optio nulla atque, ducimus illo aliquam a vitae?</P>
+  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptate nihil dignissimos! Totam, quae.
+    Laudantium impedit vel officia harum debitis ullam reiciendis, itaque ducimus fugiat dolorem quis. Explicabo, non
+    eum.</P>
+  <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quasi?</P>
+  <a href="https://www.jd.com/" target="_black">在新窗口中打开京东</a>
+  <a href="https://everywang@foxmail.com" target="_blank">点我发送邮件</a>
+  <a href="#buttom">点击跳到页面底部</a>
+  <a href="xxx/cat1.jpg" download="cat1.jpg">点我下载文件</a><br>
+  <img
+    src="https://cn.bing.com/images/search?view=detailV2&ccid=tVkMvMIK&id=517AEDF08213C15EA1B30D41239ECF4C67FDEA14&thid=OIP.tVkMvMIK6vPM0R_Z3AqLSwHaNK&mediaurl=https%3a%2f%2fuploadfile.bizhizu.cn%2fup%2f7e%2fb3%2f7f%2f7eb37fa8e75058043ed2b8c6a98180d3.jpg&exph=1820&expw=1024&q=%e7%8c%ab%e5%9b%be%e7%89%87&simid=608048738197901964&FORM=IRPRST&ck=B5918BE636A3583DD0F4460DED048177&selectedIndex=0&ajaxhist=0&ajaxserp=0">
+  <hr>
+  <hr>
+  <marquee behavior="" direction="">piao</marquee>
+  <div>
+    <p>这几种强调<b>有什么区别？</b> <u><em> em这个轻强调</em></u><strong> strong这个着重强调</strong></p>
+  </div>
+  &lt;!-- 这段注释出现在页面中 --&gt;
+  </p>
+  <pre>
+    <code>
+      function a(){
+      return 8;
+      }
+    </code>
+  </pre>
+  <hr>
+  <div>
+    <ul>
+      <li>小学</li>
+      <ol>
+        <li>一年级</li>
+        <ol>
+          <li>上学期</li>
+          <li>下学期</li>
+        </ol>
+      </ol>
+      <li>中学</li>
+      <li>大学</li>
+    </ul>
+    <hr>
+    <dl>
+      <dt>班级</dt>
+      <dd>三年二班</dd>
+      <dt>老师</dt>
+      <dd>张老师</dd>
+      <dd>王老师</dd>
+      <dd>李老师</dd>
+      <dt>学生</dt>
+      <dd>小明</dd>
+      <dd>小豆</dd>
+    </dl>
+    <hr>
+  </div>
+  <div>
+    <form action="http://www.baidu.com" target="_blank">
+      <h1>Google搜索</h1>
+      <input type="text">
+      <input type="text" name="ie" value="UTF-8" hidden>
+      <input type="submit" value="在新窗口中打开搜索结果">
+    </form>
+    <hr>
+  </div>
+  <div>
+    <form action="https://www.Google搜索.com" target="_blank">
+      <dl>
+        <p>个人信息调查表</p><br>
+        <dt>性别</dt>
+        <dd>
+          <label><input type="radio" name="gender">男</label>
+          <label><input type="radio" name="gender">女</label>
+        </dd>
+      </dl>
+      <dl>
+        <dt>年龄</dt>
+        <dd>
+          <select>
+            <option select="select">请选择</option>
+            <optgroup label="少年">
+              <option>15-18岁</option>
+            </optgroup>
+            <optgroup label="青年">
+              <option>18-25岁</option>
+            </optgroup>
+            <optgroup label="老年">
+              <option>25-80岁</option>
+            </optgroup>
+          </select>
+        </dd>
+      </dl>
+      <dl>
+        <dt>生日</dt>
+        <dd>
+          <label><input type="date"></label>
+        </dd>
+      </dl>
+      <dl>
+        <dt>生辰</dt>
+        <dd>
+          <label><input type="time"></label>
+        </dd>
+      </dl>
+      <dl>
+        <dt>照片</dt>
+        <dd>
+          <label><input type="file" name="pic" accept="image/gif" hidden> 点我选择美照上传</label>
+        </dd>
+      </dl>
+      <dl>
+        <dt>自我介绍</dt>
+        <dd>
+          <textarea cols="30" rows="11">&lt;/textarea&gt;</textarea>
+        </dd>
+      </dl>
+      <fieldset>
+        <legend>全部禁用</legend>
+        <input type="text" disabled><input type="text" disabled><input type="text" disabled><input type="text"
+          disabled><br>
+      </fieldset>
+      <button type="reset">重置</button>
+      <button type="submit">提交</button>
+    </form>
+  </div>
+  <hr>
+  <table border="1">
+    <!-- 第一行 -->
+    <thead>
+      <tr>
+        <th>编号</th>
+        <th style="background-color:red">品名</th>
+        <th>进价</th>
+        <th>出价</th>
+      </tr>
+    </thead>
+    <!-- 第二行 -->
+    <tbody>
+      <tr>
+        <td>aaa</td>
+        <td style="background-color:red">a</td>
+        <td rowspan="2">a</td>
+        <td>a</td>
+      </tr>
+      <!-- 第三行 -->
+      <tr>
+        <td>aa</td>
+        <td style="background-color:red">a</td>
+        <td>a</td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td style="background-color:red">a</td>
+        <td>a</td>
+        <td>a</td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td style="background-color:red">a</td>
+        <td>a</td>
+        <td>a</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <div>
+    <img usemap="#map1" src="https://drscdn.500px.org/photo/174778125/m%3D1170_k%3D1/2841ccf2a3720e8e794a6a6930f6ff2c"
+      width="400px" height="500px">
+    <map name="map1">
+      <area shape="rect" coords="100,100,344,322" href="https://www.jd.com" target="_blank" alt>
+    </map>
+  </div>
+  <hr>
+  <div class="container">
+    <a href="http://www.mi.com">小米</a><br>
+    <iframe src="https://nodejs.org/en/" frameborder="0" frameborder="1"></iframe>
+  </div>
+  <hr>
+  <p>aaaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbbbbb</p>
+  <pre>aaaaaa bbbbbb</pre>
+  <p id="buttom">>>>>>>>>>><<<<<<<<<<<<<<<<<<<&ltspan&gt&lt /span&gt</p>
+</body>
+
+</html>
