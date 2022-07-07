@@ -23,15 +23,19 @@
   <a href="https://everywang@foxmail.com" target="_blank">点我发送邮件</a>
   <a href="#bottom">点击跳到页面底部</a>
   <a href="cat1.jpg" download="cat1.jpg">点我下载文件</a><br>
-  <img src="cat2.png">
+  <img src="https://github.com/everywangBUG/miao/blob/master/mao/cat2.png">
   <hr>
   <hr>
   <marquee behavior="" direction="">piao</marquee>
+
   <div>
-    <p>这几种强调</p>有什么区别？ <u><em> em这个轻强调</em></u><strong> strong这个着重强调</strong>
+    <p><i>这几种强调</i>有什么区别？ <u><em> em这个轻强调</em></u><strong> strong这个着重强调</strong></p>
   </div>
-  &lt;!-- 这段注释出现在页面中 --&gt;
+
+  <p>
+    &lt;!-- 这段注释出现在页面中 --&gt;
   </p>
+
   <pre>
     <code>
       function a(){
@@ -39,7 +43,9 @@
       }
     </code>
   </pre>
+
   <hr>
+
   <div>
     <ul>
       <li>小学</li>
@@ -53,7 +59,9 @@
       <li>中学</li>
       <li>大学</li>
     </ul>
+
     <hr>
+
     <dl>
       <dt>班级</dt>
       <dd>三年二班</dd>
@@ -65,84 +73,107 @@
       <dd>小明</dd>
       <dd>小豆</dd>
     </dl>
+
     <hr>
   </div>
+
   <div>
-    <form action="http://www.baidu.com" target="_blank">
-      <h1>Google搜索</h1>
-      <input type="text">
-      <input type="text" name="ie" value="UTF-8" hidden>
-      <input type="submit" value="在新窗口中打开搜索结果">
+    <h1>Google搜索</h1>
+
+    <!-- https://baike.baidu.com/item/%E7%8E%8B%E5%A7%93/399146?fromtitle=%E7%8E%8B&fromid=817418&fr=aladdin -->
+    <form action="https://baike.baidu.com/item/%E7%8E%8B%E5%A7%93/399146" target="_blank">
+      <input type="text" name="%E7%8E%8B">
+      <input type="text" hidden name="fromid" value="817418">
+      <input type="text" hidden name="fr" value="aladdin">
+      <button type="submit">在新窗口中打开搜索结果</button>
     </form>
+
     <hr>
   </div>
+
   <div>
-    <form action="https://www.Google搜索.com" target="_blank">
+    <!-- 提交到空网址 -->
+    <form action="" target="_blank">
+
       <dl>
         <p>个人信息调查表</p><br>
         <dt>性别</dt>
         <dd>
-          <label><input type="radio" name="gender">男</label>
-          <label><input type="radio" name="gender">女</label>
+          <label><input type="radio" name="gender" value="male"> 男</label>
+          <label><input type="radio" name="gender" value="female"> 女</label>
         </dd>
       </dl>
+
       <dl>
         <dt>年龄</dt>
         <dd>
-          <select>
-            <option select="select">请选择</option>
+          <select name="age">
+            <option select="select" hidden>请选择</option>
             <optgroup label="少年">
-              <option>15-18岁</option>
+              <option value="15-18">15-18岁</option>
             </optgroup>
             <optgroup label="青年">
-              <option>18-25岁</option>
+              <option value="18-25">18-25岁</option>
             </optgroup>
             <optgroup label="老年">
-              <option>25-80岁</option>
+              <option value="25-80">25-80岁</option>
             </optgroup>
           </select>
         </dd>
       </dl>
+
       <dl>
         <dt>生日</dt>
         <dd>
-          <label><input type="date"></label>
+          <label><input type="date" name="birthday"></label>
         </dd>
       </dl>
+
       <dl>
         <dt>生辰</dt>
         <dd>
-          <label><input type="time"></label>
+          <label><input type="time" name="birthtime"></label>
         </dd>
       </dl>
+
       <dl>
         <dt>照片</dt>
         <dd>
           <label><input type="file" name="pic" accept="image/gif" hidden> 点我选择美照上传</label>
         </dd>
       </dl>
+
       <dl>
         <dt>自我介绍</dt>
         <dd>
-          <textarea cols="30" rows="11">&lt;/textarea&gt;</textarea>
+          <textarea cols="30" rows="11" name="intro">&lt;/textarea&gt;</textarea>
         </dd>
       </dl>
-      <fieldset>
+
+      <fieldset disabled>
         <legend>全部禁用</legend>
-        <input type="text" disabled><input type="text" disabled><input type="text" disabled><input type="text"
-          disabled><br>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text"><br>
       </fieldset>
+
       <button type="reset">重置</button>
       <button type="submit">提交</button>
     </form>
   </div>
+
   <hr>
   <table border="1">
+    <!-- 第一列不设置颜色 -->
+    <col>
+    <!-- 第二列设置为红色 -->
+    <col bgcolor="red">
     <!-- 第一行 -->
     <thead>
       <tr>
         <th>编号</th>
-        <th style="background-color:red">品名</th>
+        <th>品名</th>
         <th>进价</th>
         <th>出价</th>
       </tr>
@@ -150,26 +181,27 @@
     <!-- 第二行 -->
     <tbody>
       <tr>
-        <td>aaa</td>
-        <td style="background-color:red">a</td>
+        <!-- 第一列设置为表头 -->
+        <th>aaa</th>
+        <td>a</td>
         <td rowspan="2">a</td>
         <td>a</td>
       </tr>
       <!-- 第三行 -->
       <tr>
-        <td>aa</td>
-        <td style="background-color:red">a</td>
-        <td>a</td>
-      </tr>
-      <tr>
-        <td>a</td>
-        <td style="background-color:red">a</td>
+        <th>aa</th>
         <td>a</td>
         <td>a</td>
       </tr>
       <tr>
+        <th>a</th>
         <td>a</td>
-        <td style="background-color:red">a</td>
+        <td>a</td>
+        <td>a</td>
+      </tr>
+      <tr>
+        <th>a</th>
+        <td>a</td>
         <td>a</td>
         <td>a</td>
       </tr>
@@ -178,15 +210,19 @@
   <hr>
   <div>
     <img usemap="#map1" src="https://drscdn.500px.org/photo/174778125/m%3D1170_k%3D1/2841ccf2a3720e8e794a6a6930f6ff2c"
-      width="400px" height="500px">
+      width="300px">
     <map name="map1">
-      <area shape="rect" coords="100,100,344,322" href="https://www.jd.com" target="_blank" alt>
+      <!-- 左上角坐标和右下角坐标，确定rect，逗号分隔 -->
+      <area shape="rect" coords="89,84,287,223" href="https://www.jd.com" target="_blank" alt>
+      <!-- 圆心坐标和圆的半径确定圆区域，逗号分隔 -->
+      <area shape="circle" coords="152,313,50" href="https://www.jd.com" target="_blank" alt>
+
     </map>
   </div>
   <hr>
   <div class="container">
     <a href="http://www.mi.com">小米</a><br>
-    <iframe src="https://nodejs.org/en/" frameborder="0" frameborder="1"></iframe>
+    <iframe src="https://nodejs.org/en/" frameborder="1"></iframe>
   </div>
   <hr>
   <p>aaaa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bbbbbb</p>
