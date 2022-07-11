@@ -11,9 +11,17 @@
       font-size: xx-large;
       color: rgb(0, 0, 0);
       text-shadow: 1px 1px 0 rgb(22, 21, 21),
-        2px 2px 0 rgb(83, 81, 81),
-        3px 3px 0 rgb(83, 81, 81),
-        4px 4px 0 rgb(83, 81, 81)
+        1.5px 1.5px 0 rgb(53, 215, 32),
+        2px 2px 0 rgb(53, 215, 32),
+        2.5px 2.5px 0 rgb(53, 215, 32),
+        3px 3px 0 rgb(53, 215, 32),
+        3.5px 3.5px 0 rgb(53, 215, 32),
+        4px 4px 0 rgb(53, 215, 32),
+        4.5px 4.5px 0 rgb(53, 215, 32),
+        5px 5px 0 rgb(53, 215, 32),
+        5.5px 5.5px 0 rgb(53, 215, 32),
+        6px 6px 0 rgb(53, 215, 32),
+        6.5px 6.5px 0 rgb(53, 215, 32)
     }
 
     h1>span {
@@ -23,7 +31,11 @@
     h3 {
       font-size: 60px;
       color: rgb(255, 255, 255);
-      text-shadow: 1px 1px rgb(143, 9, 31);
+      text-shadow: 0 0 1px rgb(255, 0, 43),
+        0 0 1px rgb(255, 0, 43),
+        0 0 1px rgb(255, 0, 43),
+        0 0 1px rgb(255, 0, 43),
+        0 0 1px rgb(255, 0, 43);
     }
 
     .b {
@@ -34,43 +46,55 @@
 
     .b input {
       width: 500px;
-      height: 41px;
-      padding: 10px 30px;
-    }
-
-    .b input::placeholder {
-      font-size: 40px;
-
+      height: 40px;
+      /* font-size: 1em; */
+      font-size: inherit;
+      border-radius: 0.5em;
+      text-transform: uppercase;
+      font-variant: small-caps;
     }
 
     h2 {
-      font-family: Georgia, 'Times New Roman', Times, serif
+      font-family: "comic sans ms", 'comic sans', '宋体', 'simsun', serif;
+      font-variant: small-caps;
     }
 
     .a {
-      font-size: 30px;
-      font-family: Arial, Helvetica, sans-serif;
+      font: 50px "Gill Sans", sans-serif;
+      text-align-last: right;
+      font-style: italic;
+      text-align: right;
     }
 
     .a b span {
       color: blueviolet;
-      text-decoration: underline;
+      /* text-decoration: solid 5px red underline;属性值的复合写法，按照出现的顺序，后出现的覆盖前面*/
+      text-decoration-line: underline;
+      text-decoration-thickness: 5px;
+      text-decoration-color: red;
+      text-decoration-style: solid;
     }
 
     .a b span::before,
     .a b span::after {
       content: " aaa ";
       color: blueviolet;
-      text-decoration: underline;
+      /* text-decoration: solid 5px red underline;属性值的复合写法*/
+      text-decoration-line: underline;
+      text-decoration-thickness: 5px;
+      text-decoration-color: red;
+      text-decoration-style: solid;
     }
 
     .a span {
-      text-decoration: line-through;
+      text-decoration: line-through underline;
+
     }
 
     .d {
       font-size: 20px;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      letter-spacing: 1em;
     }
 
     .c span {
