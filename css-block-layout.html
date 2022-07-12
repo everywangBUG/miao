@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css-block-layout</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .box1 {
+    height: 85px;
+    background-color: black;
+  }
+
+  .a {
+    color: white;
+    width: 600px;
+    margin: auto;
+  }
+
+  .box2 {
+    width: 600px;
+    margin: auto;
+    margin-top: 15px;
+  }
+
+  .c>div {
+    width: 174px;
+    height: 34px;
+    background-color: pink;
+    border: 3px solid black;
+    margin-top: 15px;
+    text-align: center;
+    line-height: 34px;
+  }
+
+  .c>div:nth-child(n+5) {
+    margin-left: 210px;
+  }
+
+  .c>div:nth-child(n+9) {
+    margin-left: 420px;
+  }
+
+  .c>div:nth-child(4n+5) {
+    margin-top: -205px;
+  }
+
+  .c>div:hover {
+    background-color: red;
+  }
+
+  .d {
+    margin-top: 24px;
+  }
+
+  ul {
+    overflow: hidden;
+    margin-top: -1px;
+    margin-bottom: 0;
+  }
+
+  li {
+    list-style: none;
+    border-bottom: 1px dotted black;
+    margin-bottom: -1px;
+  }
+
+  .e {
+    display: block;
+    text-align: center;
+    background-color: pink;
+    margin: auto;
+    margin-top: 20px;
+  }
+</style>
+
+<body>
+  <section class="box1">
+    <header class="a">
+      <p>hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world
+        请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello
+        world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果</p>
+    </header>
+  </section>
+  <main class="box2">
+    <div class="b">
+      <p>页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+        页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+        页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+        页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px</p>
+    </div>
+    <div class="c">
+      <div>宽180高40(包含边框)</div>
+      <div>水平间隙30px</div>
+      <div>垂直间隙15px</div>
+      <div>边框宽度3px</div>
+      <div>产品</div>
+      <div>产品</div>
+      <div>产品</div>
+      <div>产品</div>
+      <div>产品</div>
+      <div>产品</div>
+      <div>产品</div>
+      <div>产品</div>
+    </div>
+    <div>
+      <ul class="d">
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+      </ul>
+    </div>
+  </main>
+  <p class="e">©版权所有<br>
+    本页所有布局均使用块元素
+  </p>
+</body>
+
+</html>
