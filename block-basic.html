@@ -13,6 +13,8 @@
   }
 
   .a {
+    min-width: 600px;
+    width: auto;
     height: 85px;
     background-color: red;
   }
@@ -26,17 +28,29 @@
   }
 
   .b {
-    width: 600px;
-    height: 249px;
+    max-width: 600px;
+    /* height: 249px; */
+    box-sizing: border-box;
     border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* margin: 20px auto; */
   }
 
   .d {
     width: inherit;
     height: 50px;
+    background-color: pink;
+    margin: auto;
+  }
+
+  .d:hover {
+    margin-left: -20px;
+    margin-right: -20px;
     background-color: pink;
   }
 
@@ -46,17 +60,23 @@
     width: inhrit;
     overflow-y: scroll;
     margin-top: 20px;
+    margin: 20px;
   }
 
   section {
     width: 0;
-    margin: auto;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     border: 50PX solid red;
-    border-top-color: #fff;
-    border-left-color: #fff;
-    border-right-color: #fff;
-    border-bottom-color: orange;
+    /* 第一种方式 */
+    /* border-color: white white orange white; */
+    /* 第二种方式  '上右下左' */
+    border-color: transparent rgba(0, 0, 0, 0) orange transparent;
+    /* border-top-color: #fff; */
+    /* border-left-color: #fff; */
+    /* border-right-color: #fff; */
+    /* border-bottom-color: orange; */
   }
 </style>
 
