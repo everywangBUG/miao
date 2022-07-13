@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>block-basic</title>
+</head>
+<style>
+  body {
+    margin: 20px;
+  }
+
+  .a {
+    height: 85px;
+    background-color: red;
+  }
+
+  .a>p {
+    display: block;
+    width: 600px;
+    height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .b {
+    width: 600px;
+    height: 249px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .d {
+    width: inherit;
+    height: 50px;
+    background-color: pink;
+  }
+
+  .b .c {
+    display: block;
+    height: 4em;
+    width: inhrit;
+    overflow-y: scroll;
+    margin-top: 20px;
+  }
+
+  section {
+    width: 0;
+    margin: auto;
+    margin-top: 20px;
+    border: 50PX solid red;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: orange;
+  }
+</style>
+
+<body>
+  <div class="a">
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt at, ea natus cupiditate assumenda deserunt
+      ex maxime dignissimos. Soluta laudantium id architecto fugit labore fuga consequatur placeat laboriosam dolorum!
+      Incidunt!</p>
+  </div>
+  <div class="b">
+    <p class=c>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sapiente voluptas officiis, praesentium,
+      nemo iure cumque nihil, facere hic asperiores dicta commodi magni, voluptates eaque esse atque nesciunt!
+      Cupiditate, modi.</p>
+    <div class="d"></div>
+    <p class="c">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi accusantium deleniti consequuntur,
+      enim nulla voluptatum qui ducimus esse rem eius eligendi consequatur sint. Sunt ut, est iusto neque numquam. Lorem
+      ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam animi perspiciatis eos, molestias provident, quae
+      ullam! Obcaecati suscipit optio labore iusto veniam facere, amet officiis, eveniet voluptatibus molestiae,
+      dignissimos dolor!</p>
+  </div>
+  <section>
+
+  </section>
+
+</body>
+
+</html>
