@@ -5,22 +5,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>oald-layout-block</title>
+  <title>oald-layout-inline</title>
 </head>
 <style>
-  body {
+  * {
     margin: 0;
     padding: 0;
+  }
+
+  body {
     overflow: hidden;
   }
 
-  .right {
-    box-sizing: border-box;
+  aside {
+    display: inline-block;
     width: 200px;
     height: 100vh;
-    background-color: pink;
+    background-color: skyblue;
     overflow-y: scroll;
-    border: 1px solid;
   }
 
   h1 {
@@ -28,132 +30,146 @@
     text-align: right;
   }
 
-  input[type="text"] {
+  input:first-of-type {
     width: 135px;
     height: 30px;
     margin-left: 2px;
   }
 
-  input[type="submit"] {
+  input:last-of-type {
     width: 30px;
     height: 25px;
     vertical-align: middle;
   }
 
-  .center {
-    box-sizing: border-box;
+  section {
+    display: inline-block;
     width: calc(100vw - 600px);
     height: 100vh;
-    border: 2px solid;
-    margin-left: 200px;
-    margin-top: -100vh;
-    background-color: rgb(255, 248, 220);
+    border: 3px solid black;
+    box-sizing: border-box;
+    background-color: chartreuse;
+    margin-left: -5px;
     overflow-y: scroll;
+    overflow-x: hidden;
   }
 
-  .aa {
-    font-size: 25px;
-    font-weight: bold;
-    display: block;
-    height: 70px;
-    border-bottom: 2px solid;
+  header {
+    width: inherit;
+    height: 100px;
+    border-bottom: 3px solid black;
+    font: 30px bold;
   }
 
-  .left {
+  span:first-of-type {
+    display: inline-block;
     width: 200px;
     height: 100vh;
+    background-color: rgb(85, 175, 235);
+    margin-left: -5px;
+    border-right: 3px solid black;
     box-sizing: border-box;
-    background-color: pink;
-    margin-left: calc(100% - 400px);
-    margin-top: -100vh;
-    border-right: 2PX solid;
-    font-size: 24px;
+    vertical-align: top;
     text-align: right;
+    font-size: 24px;
   }
 
-  .left1 {
+  span:last-of-type {
+    display: inline-block;
     width: 200px;
     height: 100vh;
+    background-color: rgb(137, 62, 194);
+    margin-left: -5px;
+    border-right: 3px solid black;
     box-sizing: border-box;
-    background-color: pink;
-    margin-left: calc(100% - 200px);
-    margin-top: -100vh;
-    font-size: 24px;
+    vertical-align: top;
     text-align: right;
+    font-size: 24px;
   }
 </style>
 
 <body>
-  <div class="right">
-    <h1>OALD Se7en</h1>
-    <input type="text">
-    <input type="submit" value="">
-    <ul>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-      <li>word1</li>
-    </ul>
-  </div>
-  <div class="center">
-    <p class="aa">fantasy</p>
-    <p>Lorem,ipsurm.</p>
+  <aside>
+    <div>
+      <h1>OALD Se7en</h1>
+      <input type="text">
+      <input type="submit" value="">
+      <ul>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+        <li>word</li>
+      </ul>
+    </div>
+  </aside>
+  <section>
+    <header>fantasy</header>
     <ol>
       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, numquam voluptatibus aspernatur nam quidem
         inventore, incidunt temporibus odit voluptate suscipit nisi dolores labore doloribus eum? Odio id error neque
@@ -215,13 +231,14 @@
       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, numquam voluptatibus aspernatur nam quidem
         inventore, incidunt temporibus odit voluptate suscipit nisi dolores labore doloribus eum? Odio id error neque
         ullam?</li>
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, numquam voluptatibus aspernatur nam quidem
-        inventore, incidunt temporibus odit voluptate suscipit nisi dolores labore doloribus eum? Odio id error neque
-        ullam?</li>
     </ol>
-  </div>
-  <div class="left">Vocabulary</div>
-  <div class="left1">History</div>
+  </section>
+  <span>
+    Vocabulary
+  </span>
+  <span>
+    History
+  </span>
 </body>
 
 </html>
