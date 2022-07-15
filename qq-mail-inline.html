@@ -20,6 +20,10 @@
     overflow-y: hidden;
   }
 
+  body div {
+    font-size: 0;
+  }
+
   header {
     height: 100px;
     width: inherit;
@@ -38,17 +42,19 @@
     display: inline-block;
     width: 200px;
     height: calc(100vh - 100px);
+    font-size: 15px;
     background-color: skyblue;
     overflow-y: scroll;
   }
+
 
   section {
     display: inline-block;
     height: calc(100vh - 100px);
     width: calc(100vw - 200px);
-    margin-left: -5px;
     background-color: rgb(82, 200, 211);
     vertical-align: top;
+    font-size: 15px;
   }
 </style>
 
