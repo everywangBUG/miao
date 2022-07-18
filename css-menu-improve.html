@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css-menu-improve</title>
+
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu {
+    position: relative;
+  }
+
+
+  .menu ul {
+    display: none;
+    list-style: none;
+  }
+
+  .menu ul li {
+    display: inline-block;
+  }
+
+  .menu ul:hover>li {
+    display: block;
+  }
+
+  /* .menu>li {
+    display: inline-block;
+  }
+
+  /* 所有菜单项成为它子菜单的定位祖先 */
+  /* .menu li {
+    position: relative;
+    white-space: nowrap;
+    list-style: none;
+  }
+
+  .menu ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+  }
+
+  .menu li:hover>ul {
+    display: block;
+    color: red;
+  } */
+</style>
+
+<body>
+
+  <div>
+    <div class="menu">保存
+      <ul>
+        <li>
+          <ul>
+            <li>保存为CSS文件</li>
+            <li>保存为HTML文件</li>
+            <li>保存为JavaScript文件</li>
+          </ul>
+        </li>
+      </ul>
+      <li>另存</li>
+      <li>退出</li>
+    </div>
+  </div>
+</body>
+
+</html>

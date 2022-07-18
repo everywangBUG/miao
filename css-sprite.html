@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css-sprite</title>
+</head>
+<style>
+  div {
+    font-size: 30px;
+
+  }
+
+  a[class] {
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(/mao/icon.png);
+    display: inline-block;
+    background-size: 1644px 121px;
+  }
+
+  .icon-search {
+    width: 40px;
+    height: 40px;
+    background-position: -88px 0px;
+  }
+
+  .icon-more {
+    width: 40px;
+    height: 37px;
+    background-position: -197px 7px;
+  }
+
+  .icon-go {
+    width: 63px;
+    height: 70px;
+    background-position: -400px 7px;
+  }
+
+  .icon-back {
+    width: 63px;
+    height: 70px;
+    background-position: -530px 7px;
+  }
+
+  .icon-login {
+    width: 70px;
+    height: 70px;
+    background-position: -1327px 1px;
+  }
+</style>
+
+<body>
+  <div> <button>搜索</button> </div>
+  <a class="icon-search" href="#"></a>
+  <div> <button>更多</button> </div>
+  <a class="icon-more" href="#"></a>
+  <div> <button>向前</button> </div>
+  <a class="icon-go" href="#"></a>
+  <div> <button>向后</button> </div>
+  <a class="icon-back" href="#"></a>
+  <div> <button>登录</button> </div>
+  <a class="icon-login" href="#"></a>
+</body>
+
+</html>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>pull-down-list</title>
+  <title>css-menu-html</title>
 </head>
 <style>
   * {
@@ -45,13 +45,6 @@
     font: 25px Arial, Helvetica, sans-serif;
   }
 
-  .dropbtn:hover {
-    width: 90px;
-    height: 35px;
-    border-radius: 10px;
-    background-color: rgb(26, 35, 39);
-  }
-
   .down {
     display: none;
     position: absolute;
@@ -60,14 +53,62 @@
   }
 
 
+  /*让第一层的li横向排列
+  .down > li {
+    display:inline-block;
+  }*/
+  /* .down li {
+    position: relative;
+  } */
+
   .down li {
-    display: block;
+    position: relative;
     color: rgb(255, 255, 255);
     list-style: none;
     margin-top: 18px;
   }
 
   .down li:hover {
+    width: 370px;
+    height: 40px;
+    background-color: rgb(31, 41, 45);
+    line-height: 40px;
+  }
+
+  .down1 {
+    display: none;
+    position: absolute;
+    white-space: nowrap;
+    font-size: 20px;
+    top: auto;
+    left: auto;
+  }
+
+  .dropdown1 {
+    position: relative;
+    border: none;
+    background-color: rgb(38, 50, 56);
+    color: rgb(255, 255, 255);
+    font: 25px Arial, Helvetica, sans-serif;
+  }
+
+  .dropbtn1 {
+    border: none;
+    background-color: rgb(38, 50, 56);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+
+  .dropdown1:hover .down1 {
+    display: block;
+  }
+
+  .down1 li {
+    margin-left: 200px;
+    font-size: 20px;
+  }
+
+  .down1 li:hover {
     width: 370px;
     height: 40px;
     background-color: rgb(31, 41, 45);
@@ -81,9 +122,17 @@
     <div class="dropdown">
       <button class="dropbtn">文件(F)</button>
       <ul class="down">
-        <li>新建文本文件&nbsp;&nbsp;&nbsp;&nbsp;Ctrl+N</li>
-        <li>新建文件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ctrl+Alt+windows+N</li>
-        <li>新建窗口&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ctrl+Shift+N</li>
+        <li class="dropdown1">
+          <button class="dropbtn1">新建文本文件</button>
+          <ul class="down1">
+            <li>新建CSS文件</li>
+            <li>新建Java文件</li>
+            <li>新建JavaScript文件</li>
+            <li>新建Python文件</li>
+          </ul>
+        </li>
+        <li>新建文件</li>
+        <li>新建窗口</li>
         <li>打开文件</li>
         <li>打开文件夹</li>
         <li>从文件打开工作区</li>
