@@ -8,10 +8,92 @@
   <title>radio-slider</title>
 </head>
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sec {
+    border: 1px solid #12b0b9;
+    position: relative;
+    width: 600px;
+  }
+
+  .sec input {
+    display: none;
+    position: relative;
+    top: 50px;
+    z-index: 10;
+  }
+
+  .images {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .images img {
+    width: 100%;
+    height: 100%;
+    left: 100%;
+    position: absolute;
+    transition: 2s;
+  }
+
+  .indicators {
+    position: absolute;
+  }
+
+  .indicators label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 183);
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  .indicators label:hover {
+    background-color: blue;
+  }
+
+  input:nth-child(1):checked~.images img:nth-child(1),
+  input:nth-child(2):checked~.images img:nth-child(2),
+  input:nth-child(3):checked~.images img:nth-child(3),
+  input:nth-child(4):checked~.images img:nth-child(4) {
+    left: 0;
+  }
+
+  input:nth-child(1):checked~.indicators label:nth-child(1),
+  input:nth-child(2):checked~.indicators label:nth-child(2),
+  input:nth-child(3):checked~.indicators label:nth-child(3),
+  input:nth-child(4):checked~.indicators label:nth-child(4) {
+    background-color: red;
+  }
 </style>
 
 <body>
-  <div></div>
+  <div class="sec">
+    <input type="radio" id="r1" name="pic">
+    <input type="radio" id="r2" name="pic">
+    <input type="radio" id="r3" name="pic">
+    <input type="radio" id="r4" name="pic">
+    <div class="images">
+      <img src="https://everywangbug.github.io/miao/mao/slider1.jpg" alt="">
+      <img src="https://everywangbug.github.io/miao/mao/slider2.jpg" alt="">
+      <img src="https://everywangbug.github.io/miao/mao/slider3.jpg" alt="">
+      <img src="https://everywangbug.github.io/miao/mao/slider4.jpg" alt="">
+    </div>
+    <div class="indicators">
+      <label for="r1"></label>
+      <label for="r2"></label>
+      <label for="r3"></label>
+      <label for="r4"></label>
+    </div>
+  </div>
 </body>
 
 </html>

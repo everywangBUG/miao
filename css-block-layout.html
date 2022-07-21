@@ -106,6 +106,30 @@
   .f span:not(:first-child) {
     margin-left: 30px;
   }
+
+  .g {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .g span ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 30px;
+  }
+
+  .g span ul li {
+    list-style: none;
+    width: 180px;
+    height: 40px;
+    border: 3px solid;
+    box-sizing: border-box;
+    background-color: tan;
+    line-height: 40px;
+    text-align: center;
+  }
 </style>
 
 <body>
@@ -122,6 +146,33 @@
         页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
         页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
         页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px</p>
+    </div>
+
+    <div class="g">
+      <span>
+        <ul>
+          <li>Flexible Box</li>
+          <li>Flexible Box</li>
+          <li>Flexible Box</li>
+          <li>Flexible Box</li>
+        </ul>
+      </span>
+      <span>
+        <ul>
+          <li>Flexible Box</li>
+          <li>Flexible Box</li>
+          <li>Flexible Box</li>
+          <li>Flexible Box</li>
+        </ul>
+      </span>
+      <span>
+        <ul>
+          <li>Flexible Box</li>
+          <li>Flexible Box</li>
+          <li>Flexible Box</li>
+          <li>Flexible Box</li>
+        </ul>
+      </span>
     </div>
     <div class="f">
       <span>
@@ -148,8 +199,8 @@
           <li>Hello World!</li>
         </ul>
       </span>
-
     </div>
+
     <div class="c">
       <div>宽180高40(包含边框)</div>
       <div>水平间隙30px</div>
