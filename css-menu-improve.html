@@ -21,58 +21,72 @@
 
   .menu ul {
     display: none;
+    position: absolute;
     list-style: none;
-  }
-
-  .menu ul li {
-    display: inline-block;
-  }
-
-  .menu ul:hover>li {
-    display: block;
-  }
-
-  /* .menu>li {
-    display: inline-block;
   }
 
   /* 所有菜单项成为它子菜单的定位祖先 */
-  /* .menu li {
+  .menu ul li {
     position: relative;
     white-space: nowrap;
-    list-style: none;
+    /*设定文字不折行*/
+    background-color: green;
   }
 
-  .menu ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
+  .menu ul li:hover {
+    background-color: red;
   }
 
   .menu li:hover>ul {
     display: block;
-    color: red;
-  } */
+  }
+
+  /* 只有第一层菜单需要横向排列 */
+  .menu>li {
+    display: inline-block;
+  }
+
+  .menu ul ul {
+    top: 0;
+    left: 100%;
+  }
+
+  .menu ul ul li {
+    background-color: gold;
+  }
+
+  .menu ul ul li:hover {
+    background-color: pink;
+  }
 </style>
 
 <body>
 
   <div>
-    <div class="menu">保存
-      <ul>
-        <li>
-          <ul>
-            <li>保存为CSS文件</li>
-            <li>保存为HTML文件</li>
-            <li>保存为JavaScript文件</li>
-          </ul>
-        </li>
-      </ul>
+    <ul class="menu">
+      <li>保存
+        <ul>
+          <li>保存为CSS
+            <ul>
+              <li>CSS
+                <ul>
+                  <li>你好</li>
+                  <li>你好</li>
+                  <li>你好</li>
+                </ul>
+              </li>
+              <li>HTML</li>
+              <li>JavaScript</li>
+            </ul>
+          </li>
+          <li>保存为HTML</li>
+          <li>保存为JavaScript</li>
+        </ul>
+      </li>
       <li>另存</li>
+      <li>存储为</li>
       <li>退出</li>
-    </div>
-  </div>
+    </ul>
 </body>
 
 </html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>twitter-heart</title>
+</head>
+<style type="text/less">
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .transition1 {
+    width: 100px;
+    height: 100px;
+    background-image: url(https://everywangbug.github.io/miao/mao/transition.png);
+    border: 5px solid;
+    box-sizing: border-box;
+    background-size: 2900px 100px;
+    background-position: -5px -5px;
+    transition: none;
+    &:hover {
+      transition: 1s steps(28);
+      background-position: -2800px 0;
+    }
+  }
+  .transition2{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 5px solid;
+    /* margin: auto; */
+    overflow: hidden;
+    img{
+      position: absolute;
+      left: 0;
+      transition: none;
+      &:hover{
+        transition: 1s steps(28);
+        left: -2800px;
+      }
+    }
+  }
+</style>
+
+<body>
+  <div>
+    <section class="transition1"></section>
+  </div>
+  <div>
+    <section class="transition2">
+      <img src="https://everywangbug.github.io/miao/mao/transition.png" alt="">
+    </section>
+  </div>
+  <script src="less.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>radio-sliders</title>
+</head>
+<style type="text/less">
+  * {
+    margin: 0;
+    padding: 0;
+    zoom: 1.2;
+  }
+
+  input[type="checkbox"] {
+    /*背景*/
+    position: relative;
+    appearance: none;
+    transition: all 100ms;
+    border-radius: 31px;
+    width: 102px;
+    height: 62px;
+    background-color: #e9e9eb;
+
+    /*圆点*/
+    &::after {
+      content:"";
+      position: absolute;
+      width: 62px;
+      height: 62px;
+      border-radius: 31px;
+      background-color: #fff;
+      box-shadow: 1px 1px 5px rgba(#000,.3);
+      transition: all 300ms cubic-bezier(.4,.4,.25,1.35);
+    }
+    /*触发*/
+    &:checked {
+      background-color: rgb(48, 243, 77);
+      &::after {
+        margin-left: 41px;
+        /* right: 0; */
+      }
+    }
+  }
+</style>
+
+<body>
+  <div>
+    <div>
+      <label><input type="checkbox" id="sec"></label>
+    </div>
+    <script src="less.min.js"></script>
+</body>
+
+</html>
