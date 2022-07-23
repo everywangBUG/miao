@@ -27,7 +27,7 @@
 .table-striped tr:nth-child(2n) {
   background-color: #f2f2f2;
 }
-.table-hover:nth-child(n + 2) {
+.table-hover tr:nth-child(n + 2):hover {
   background-color: #ececec;
 }
 .table-bordered {
