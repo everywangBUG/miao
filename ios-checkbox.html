@@ -44,12 +44,48 @@
       }
     }
   }
+
+  /*第二种方案*/
+  .slider2 input {
+
+  }
+  .slider2{
+    width: 400px;
+    height: 200px;
+    /* position: relative; */
+    border-radius: 100px;
+    border: 5px solid rgb(232, 218, 218)
+  }
+  .slider2 .outer {
+    display: inline-block;
+    border-radius: 55px;
+    background-color: rgb(255, 255, 255);
+
+  }
+  .slider2 .inner{
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    margin-left: 0;
+    border-radius: 55px;
+    /* position: absolute; */
+    vertical-align: bottom;
+    background-color: blue;
+  }
 </style>
 
 <body>
   <div>
     <div>
       <label><input type="checkbox" id="sec"></label>
+    </div>
+    <div class="slider2">
+      <label>
+        <input type="radio">
+        <span class="outer">
+          <span class="inner"></span>
+        </span>
+      </label>
     </div>
     <script src="less.min.js"></script>
 </body>
