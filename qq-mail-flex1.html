@@ -5,55 +5,63 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>qq-mail</title>
+  <title>qq-mail-position</title>
 </head>
 <style>
   html,
   body {
     margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
+    background-color: rgba(0, 0, 0, .3);
     overflow-y: hidden;
   }
 
-  section {
-    height: 100%;
+  .detail {
     display: flex;
-    flex-flow: column wrap;
-  }
-
-  header {
-    height: 100px;
+    flex-flow: column;
+    height: 100%;
     width: 100%;
     background-color: tan;
   }
 
-  div {
+  .detail header {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(34, 139, 138);
+  }
+
+  .main {
     display: flex;
-    flex: 1;
-    align-content: end;
-    overflow: hidden;
+    flex-flow: row wrap;
+    height: 100%;
+    background-color: rgb(245, 245, 245);
   }
 
-  aside {
+  .left {
     width: 200px;
-    flex: none;
-    background-color: pink;
-    overflow: auto;
+    height: 100%;
+    background-color: rgb(34, 88, 23);
+    overflow-y: scroll;
   }
 
-  main {
+  .right {
     flex: 1;
-    background-color: #234243;
-    overflow-y: auto;
+    flex-grow: 1;
+    /*flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;*/
+    background-color: rgb(65, 86, 182);
+    overflow-y: scroll;
   }
 </style>
 
 <body>
-  <section>
+  <div class="detail">
     <header></header>
-    <div>
-      <aside>
+    <div class="main">
+      <div class="left">
         <li></li>
         <li></li>
         <li></li>
@@ -106,26 +114,8 @@
         <li></li>
         <li></li>
         <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </aside>
-      <main>
+      </div>
+      <div class="right">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti consectetur dolore impedit culpa,
           omnis incidunt minima voluptatum facere mollitia! Quo asperiores ratione quis qui. Eligendi, quas? Non, nam
@@ -185,11 +175,10 @@
           ullam illum aperiam quas expedita nemo rem atque a consectetur reprehenderit, et ad, reiciendis ipsum quo
           fugiat sequi odit tempore. Et ipsum officia laudantium dolore nobis sequi modi molestiae eos, voluptatibus
           accusantium, incidunt cum rerum animi sunt laboriosam omnis perferendis dolorum reiciendis quaerat possimus.
-          Dolores mollitia unde voluptates incidunt amet!
-        </p>
-      </main>
+          Dolores mollitia unde voluptates incidunt amet!</p>
+      </div>
     </div>
-  </section>
+  </div>
 </body>
 
 </html>

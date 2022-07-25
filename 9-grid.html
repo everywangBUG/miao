@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9-grid</title>
+</head>
+<style type="text/less">
+  body {
+    zoom: 2;
+  }
+
+  .a {
+    width: 150px;
+    height: 150px;
+    border: 5px solid blue;
+    box-sizing: border-box;
+    border-collapse: collapse;
+
+      tr td {
+        border: 5px solid blue;
+        box-sizing: content-box;
+        text-align: center;
+        color: #249124;
+        cursor: pointer;
+
+        &:hover {
+          position: absolute;
+          margin-top: -4px;
+          margin-left: -4px;
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          border: 5px solid red;
+          }
+      }
+  }
+
+  .b {
+    width: 154px;
+    height: 150px;
+    border: 2.5px solid blue;
+    box-sizing: border-box;
+
+    ul {
+      margin-left: -41px;
+      margin-top: -1px;
+
+      li {
+        float: left;
+        list-style: none;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border: 2.5px solid blue;
+        box-sizing: border-box;
+        text-align: center;
+        cursor: pointer;
+
+          &:hover {
+            position: relative;
+            border: 5px solid red;
+          }
+        }
+    }
+  }
+
+  .c {
+    width: 150px;
+    height: 150px;
+    border: 5px solid blue;
+    box-sizing: border-box;
+    align-content: flex-start;
+    text-align: center;
+    cursor: pointer;
+
+    ul {
+      display: flex;
+      margin-left: -44px;
+      flex-flow: row wrap;
+      width: 150px;
+      height: 150px;
+
+      li {
+        width: 50px;
+        height: 50px;
+        margin-top: -25px;
+        line-height: 50px;
+        list-style: none;
+        border: 2.5px solid blue;
+        box-sizing: border-box;
+
+        &:hover {
+          position: relative;
+          border: 5px solid red;
+        }
+      }
+    }
+  }
+
+  .d {
+    display: grid;
+    width: 150px;
+    height: 150px;
+    border: 2.5px solid blue;
+    box-sizing: border-box;
+    grid-template-columns: 49px 49px 49px;
+    grid-template-rows: 49px 49px 49px;
+    justify-content: space-between;
+    cursor: pointer;
+
+    li {
+      border: 2.5px solid blue;
+      line-height: 50px;
+      list-style: none;
+      box-sizing: border-box;
+      text-align: center;
+
+        &:hover {
+          position: relative;
+          border: 5px solid red;
+        }
+      }
+  }
+</style>
+<body>
+<h3>Table</h3>
+<table class="a">
+<tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+  </tr>
+</table>
+<h3>Float</h3>
+<div class="b">
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ul>
+</div>
+<h3>Flex</h3>
+<div class="c">
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ul>
+</div>
+<h3>Grid</h3>
+<div class="d">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+</div>
+<script src="less.min.js"></script>
+</body>
+</html>
